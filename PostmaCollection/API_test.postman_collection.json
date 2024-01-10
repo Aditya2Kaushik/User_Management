@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "3cc5bbad-bde2-41d3-81e5-6d6f53585d28",
+		"name": "API_test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16511845"
+	},
+	"item": [
+		{
+			"name": "Read all",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Auth",
+						"value": "Aditya_Backend",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read by id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Auth",
+						"value": "Aditya_Backend",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/users/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Auth",
+						"value": "Aditya_Backend",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Aman\",\n    \"lastName\": \"Sharma\",\n    \"age\": 15,\n    \"location\": \"Bharatpur\",\n    \"interests\": \"Running\",\n    \"income\": 20000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Auth",
+						"value": "Aditya_Backend",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/users/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Auth",
+						"value": "Aditya_Backend",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Shyam\",\n    \"lastName\": \"Kumar\",\n    \"age\": 23,\n    \"location\": \"Jaipur\",\n    \"interests\": \"Biking\",\n    \"income\": 40000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
